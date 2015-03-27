@@ -32,7 +32,8 @@ var config = {
 };
 
 gulp.task('clean', function(cb){
-  del([config.build.path], cb);
+  del([config.build.path + '**/*',
+       '!' + config.build.path + '.git/'], cb);
 });
 
 gulp.task('js', function(){
