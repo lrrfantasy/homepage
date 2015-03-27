@@ -1,1 +1,27 @@
 @import 'lib/reset';
+@import 'keyframe';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: 'Open sans', Arial, sans-serif;
+}
+
+.logo {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 100px auto;
+  animation: cd-play 8s infinite linear;
+  -webkit-animation: cd-play 8s infinite linear;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: lighter;
+}

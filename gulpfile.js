@@ -28,9 +28,6 @@ var config = {
   build: {
     path: 'build/'
   },
-  data: {
-    path: './data.json'
-  },
   port: 8000
 };
 
@@ -67,7 +64,6 @@ gulp.task('watch', function(){
   gulp.watch(config.sass.path + '**/*' + config.sass.extension, ['sass']);
   gulp.watch(config.asset.path + '**/*', ['asset']);
   gulp.watch(config.jade.path + '**/*' + config.jade.extension, ['jade']);
-  gulp.watch(config.data.path, ['jade']);
 });
 
 gulp.task('server', function(){
