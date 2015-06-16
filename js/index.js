@@ -1,5 +1,5 @@
-var $ = require('jquery');
+import $ from 'jquery'
 
-$(function(){
-  console.log($.fn.jquery);
-});
+$(() => {
+  console.log($.fn.jquery)
+})
