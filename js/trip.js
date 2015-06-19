@@ -58,7 +58,7 @@ class Trip {
 
   places(places) {
     this.places = places
-    let bubbles = places.map((place) => {
+    let bubbles = places.map(place => {
       return {
         name: place.name,
         radius: 5,
@@ -72,9 +72,9 @@ class Trip {
 
   routes(routes) {
     this.routes = routes
-    let arcs = routes.map((route) => {
+    let arcs = routes.map(route => {
       return [this.getPlaceByName(route[0]), this.getPlaceByName(route[1])]
-    }).map((route) => {
+    }).map(route => {
       return {
         origin: route[0],
         destination: route[1]
@@ -84,7 +84,7 @@ class Trip {
   }
 
   getPlaceByName(name) {
-    return this.places.filter((place) => {
+    return this.places.filter(place => {
       return place.name === name
     })[0]
   }
