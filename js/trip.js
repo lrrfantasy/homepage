@@ -53,7 +53,7 @@ class Trip {
 
   init() {
     this.instance = new Datamap(this.config)
-    return this.instance
+    return this
   }
 
   places(places) {
@@ -68,10 +68,10 @@ class Trip {
       }
     })
     this.instance.bubbles(bubbles)
+    return this
   }
 
   routes(routes) {
-    this.routes = routes
     let arcs = routes.map(route => {
       return [this.getPlaceByName(route[0]), this.getPlaceByName(route[1])]
     }).map(route => {
@@ -81,6 +81,7 @@ class Trip {
       }
     })
     this.instance.arc(arcs)
+    return this
   }
 
   getPlaceByName(name) {
