@@ -66,7 +66,6 @@ japanMap.places([
     longitude: 135.5022
   }
 ])
-japanMap.routes([['Tokyo', 'Nagoya'], ['Nagoya', 'Osaka']])
 
 let australiaMap = new Trip('australia', [135, -30], 600)
 australiaMap.init()
@@ -87,7 +86,6 @@ australiaMap.places([
     longitude: 153.0333
   }
 ])
-australiaMap.routes([['Sydney', 'Melbourne'], ['Sydney', 'Brisbane']])
 
 let swedenMap = new Trip('sweden', [18, 62], 1000)
 swedenMap.init()
@@ -123,5 +121,3 @@ swedenMap.places([
     longitude: 12.5683
   }
 ])
-swedenMap.routes([['Moscow', 'St Petersburg'], ['St Petersburg', 'Helsinki'], ['Helsinki', 'Stockholm'], ['Stockholm', 'Oslo'], ['Oslo', 'Copenhagen']])
-

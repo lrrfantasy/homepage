@@ -6,7 +6,7 @@ const defaultConfig = {
   projection: 'mercator',
   geographyConfig: {
     borderColor: '#79b6d2',
-    highlightFillColor: 'rgba(0, 0, 0, 0.05)',
+    highlightFillColor: 'rgba(0, 0, 0, 0.3)',
     highlightBorderColor: '#79b6d2'
   },
   bubblesConfig: {
@@ -21,7 +21,7 @@ const defaultConfig = {
     greatArc: true
   },
   fills: {
-    defaultFill: 'rgba(0, 0, 0, 0.2)',
+    defaultFill: 'transparent',
     city: '#cd5c5c'
   }
 }
