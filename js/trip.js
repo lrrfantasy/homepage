@@ -7,14 +7,20 @@ const defaultConfig = {
   geographyConfig: {
     borderColor: '#79b6d2',
     highlightFillColor: 'rgba(0, 0, 0, 0.3)',
-    highlightBorderColor: '#79b6d2'
+    highlightBorderColor: '#79b6d2',
+    popupTemplate: (geography, data) => {
+      return '<div class="travel__tooltip">' + geography.properties.name + '</div>'
+    },
   },
   bubblesConfig: {
     borderWidth: 0,
     fillOpacity: 1,
     highlightFillColor: '#ff8f8f',
     highlightBorderWidth: 0,
-    highlightFillOpacity: 1
+    highlightFillOpacity: 1,
+    popupTemplate: (geography, data) => {
+      return '<div class="travel__tooltip">' + data.name + '</div>'
+    }
   },
   arcConfig: {
     strokeColor: '#cd5c5c',
