@@ -1,6 +1,52 @@
 import _ from 'lodash'
 import Trip from './trip'
 
+let ukMap = new Trip('uk', [-5, 55], 1400)
+ukMap.init()
+ukMap.places([
+  {
+    name: 'London',
+    latitude: 51.5072,
+    longitude: 0.1275
+  },
+  {
+    name: 'Sheffield',
+    latitude: 53.5856,
+    longitude: -1.4669
+  },
+  {
+    name: 'Edinburgh',
+    latitude: 55.9531,
+    longitude: -3.1889
+  },
+  {
+    name: 'Liverpool',
+    latitude: 53.4,
+    longitude: -3
+  }
+])
+
+let thailandMap = new Trip('thailand', [98, 7], 1400)
+thailandMap.init()
+thailandMap.places([
+  {
+    name: 'Phuket',
+    latitude: 7.89,
+    longitude: 98.3983
+  }
+])
+
+
+let indiaMap = new Trip('india', [80, 20], 900)
+indiaMap.init()
+indiaMap.places([
+  {
+    name: 'Bangalore',
+    latitude: 12.9667,
+    longitude: 77.5667
+  }
+])
+
 let japanMap = new Trip('japan', [140, 39], 1400)
 japanMap.init()
 japanMap.places([
