@@ -1,8 +1,7 @@
 import _ from 'lodash'
 import Trip from './trip'
 
-let ukMap = new Trip('uk', [-5, 55], 1400)
-ukMap.init().places([
+new Trip('uk', [-5, 55], 1400).init().places([
   {
     name: 'London',
     latitude: 51.5072,
@@ -25,8 +24,7 @@ ukMap.init().places([
   }
 ])
 
-let thailandMap = new Trip('thailand', [98, 7], 1400)
-thailandMap.init().places([
+new Trip('thailand', [98, 7], 1400).init().places([
   {
     name: 'Phuket',
     latitude: 7.89,
@@ -35,8 +33,7 @@ thailandMap.init().places([
 ])
 
 
-let indiaMap = new Trip('india', [80, 20], 900)
-indiaMap.init().places([
+new Trip('india', [80, 20], 900).init().places([
   {
     name: 'Bangalore',
     latitude: 12.9667,
@@ -44,8 +41,7 @@ indiaMap.init().places([
   }
 ])
 
-let japanMap = new Trip('japan', [140, 39], 1400)
-japanMap.init().places([
+new Trip('japan', [140, 39], 1400).init().places([
   {
     name: 'Tokyo',
     latitude: 35.6833,
@@ -63,8 +59,7 @@ japanMap.init().places([
   }
 ])
 
-let australiaMap = new Trip('australia', [135, -30], 600)
-australiaMap.init().places([
+new Trip('australia', [135, -30], 600).init().places([
   {
     name: 'Sydney',
     latitude: -33.865,
@@ -82,8 +77,7 @@ australiaMap.init().places([
   }
 ])
 
-let swedenMap = new Trip('sweden', [18, 62], 1000)
-swedenMap.init().places([
+new Trip('sweden', [22, 62], 1000).init().places([
   {
     name: 'Moscow',
     latitude: 55.75,
