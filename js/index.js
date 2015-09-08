@@ -32,7 +32,6 @@ new Trip('thailand', [98, 7], 1400).init().places([
   }
 ])
 
-
 new Trip('india', [80, 20], 900).init().places([
   {
     name: 'Bangalore',
@@ -107,5 +106,18 @@ new Trip('sweden', [22, 62], 1000).init().places([
     name: 'Copenhagen',
     latitude: 55.6761,
     longitude: 12.5683
+  }
+])
+
+new Trip('japan-2', [135, 35], 1400).init().places([
+  {
+    name: 'Kyoto',
+    latitude: 35.0117,
+    longitude: 135.7683
+  },
+  {
+    name: 'Osaka',
+    latitude: 34.6939,
+    longitude: 135.5022
   }
 ])
