@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import Trip from './trip'
 
-new Trip('uk', [-5, 55], 1400).init().places([
+new Trip('uk', [0, 55], 600).init().places([
   {
     name: 'London',
     latitude: 51.5072,
@@ -24,7 +24,7 @@ new Trip('uk', [-5, 55], 1400).init().places([
   }
 ])
 
-new Trip('thailand', [98, 7], 1400).init().places([
+new Trip('thailand', [98, 7], 600).init().places([
   {
     name: 'Phuket',
     latitude: 7.89,
@@ -32,7 +32,7 @@ new Trip('thailand', [98, 7], 1400).init().places([
   }
 ])
 
-new Trip('india', [80, 20], 900).init().places([
+new Trip('india', [80, 20], 400).init().places([
   {
     name: 'Bangalore',
     latitude: 12.9667,
@@ -40,7 +40,7 @@ new Trip('india', [80, 20], 900).init().places([
   }
 ])
 
-new Trip('japan', [140, 39], 1400).init().places([
+new Trip('japan', [135, 40], 600).init().places([
   {
     name: 'Tokyo',
     latitude: 35.6833,
@@ -58,7 +58,7 @@ new Trip('japan', [140, 39], 1400).init().places([
   }
 ])
 
-new Trip('australia', [135, -30], 600).init().places([
+new Trip('australia', [135, -30], 300).init().places([
   {
     name: 'Sydney',
     latitude: -33.865,
@@ -76,7 +76,7 @@ new Trip('australia', [135, -30], 600).init().places([
   }
 ])
 
-new Trip('sweden', [22, 62], 1000).init().places([
+new Trip('sweden', [22, 62], 400).init().places([
   {
     name: 'Moscow',
     latitude: 55.75,
@@ -109,15 +109,10 @@ new Trip('sweden', [22, 62], 1000).init().places([
   }
 ])
 
-new Trip('japan-2', [135, 35], 1400).init().places([
+new Trip('japan-2', [135, 40], 700).init().places([
   {
     name: 'Kyoto',
     latitude: 35.0117,
     longitude: 135.7683
-  },
-  {
-    name: 'Osaka',
-    latitude: 34.6939,
-    longitude: 135.5022
   }
 ])
