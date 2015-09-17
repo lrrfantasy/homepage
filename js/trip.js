@@ -23,10 +23,6 @@ const defaultConfig = {
       return `<div class="travel__tooltip">${data.name}</div>`
     }
   },
-  arcConfig: {
-    strokeColor: CONST.INDIAN_RED,
-    greatArc: true
-  },
   fills: {
     defaultFill: 'transparent',
     city: CONST.INDIAN_RED
@@ -70,25 +66,6 @@ class Trip {
     })
     this.instance.bubbles(bubbles)
     return this
-  }
-
-  routes(routes) {
-    let arcs = routes.map(route => {
-      return [this.getPlaceByName(route[0]), this.getPlaceByName(route[1])]
-    }).map(route => {
-      return {
-        origin: route[0],
-        destination: route[1]
-      }
-    })
-    this.instance.arc(arcs)
-    return this
-  }
-
-  getPlaceByName(name) {
-    return this.places.filter(place => {
-      return place.name === name
-    })[0]
   }
 }
 

@@ -1,4 +1,3 @@
-import _ from 'lodash'
 import Trip from './trip'
 import Overview from './overview'
 
