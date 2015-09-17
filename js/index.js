@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import Trip from './trip'
+import Overview from './overview'
 
 new Trip('uk', [0, 55], 600).init().places([
   {
@@ -116,3 +117,5 @@ new Trip('japan-2', [135, 40], 700).init().places([
     longitude: 135.7683
   }
 ])
+
+new Overview(document.getElementById('overview'));
