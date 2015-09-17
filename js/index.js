@@ -2,6 +2,8 @@ import _ from 'lodash'
 import Trip from './trip'
 import Overview from './overview'
 
+new Overview(document.getElementById('overview'))
+
 new Trip('indonesia', [120, 0], 300).init().places([
   {
     name: 'Bali',
@@ -125,5 +127,3 @@ new Trip('japan-2', [135, 40], 700).init().places([
     longitude: 135.7683
   }
 ])
-
-new Overview(document.getElementById('overview'));

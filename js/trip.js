@@ -1,15 +1,16 @@
 import d3 from 'd3'
 import _ from 'lodash'
 import Datamap from './vendor/datamap'
+import CONST from './const'
 
 const defaultConfig = {
   projection: 'mercator',
   geographyConfig: {
-    borderColor: '#79b6d2',
+    borderColor: CONST.PALE_BLUE,
     highlightFillColor: 'rgba(0, 0, 0, 0.3)',
-    highlightBorderColor: '#79b6d2',
+    highlightBorderColor: CONST.PALE_BLUE,
     popupTemplate: (geography, data) => {
-      return '<div class="travel__tooltip">' + geography.properties.name + '</div>'
+      return `<div class="travel__tooltip">${geography.properties.name}</div>`
     },
   },
   bubblesConfig: {
@@ -19,16 +20,16 @@ const defaultConfig = {
     highlightBorderWidth: 0,
     highlightFillOpacity: 1,
     popupTemplate: (geography, data) => {
-      return '<div class="travel__tooltip">' + data.name + '</div>'
+      return `<div class="travel__tooltip">${data.name}</div>`
     }
   },
   arcConfig: {
-    strokeColor: '#cd5c5c',
+    strokeColor: CONST.INDIAN_RED,
     greatArc: true
   },
   fills: {
     defaultFill: 'transparent',
-    city: '#cd5c5c'
+    city: CONST.INDIAN_RED
   }
 }
 
