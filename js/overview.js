@@ -2,7 +2,7 @@ import d3 from 'd3'
 import _ from 'lodash'
 import Datamap from './vendor/datamap'
 
-const visited = ['GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DEN']
+const visited = ['IDN', 'GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DEN']
 
 const config = {
   projection: 'mercator',

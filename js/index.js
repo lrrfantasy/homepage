@@ -2,6 +2,14 @@ import _ from 'lodash'
 import Trip from './trip'
 import Overview from './overview'
 
+new Trip('indonesia', [120, 0], 300).init().places([
+  {
+    name: 'Bali',
+    latitude: -8.65,
+    longitude: 115.2167
+  }
+])
+
 new Trip('uk', [0, 55], 600).init().places([
   {
     name: 'London',
