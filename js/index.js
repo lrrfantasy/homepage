@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 import Trip from './trip'
 import Overview from './overview'
 
@@ -126,3 +128,5 @@ new Trip('japan-2', [135, 40], 700).init().places([
     longitude: 135.7683
   }
 ])
+
+$('#overview svg').css('position', 'fixed')

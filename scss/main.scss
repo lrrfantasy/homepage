@@ -13,6 +13,10 @@ body {
 .header {
   height: auto;
   position: relative;
+
+  svg {
+    z-index: -1;
+  }
 }
 
 .header__cover {

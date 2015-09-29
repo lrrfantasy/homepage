@@ -9,20 +9,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-jade": "^1.1.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-connect": "^2.2.0",
-    "gulp-browserify": "^0.5.1",
-    "del": "^1.2.1",
-    "jquery": "1.11.2",
-    "babelify": "^6.2.0",
     "babel": "^5.8.21",
-    "d3": "^3.5.6",
+    "babelify": "^6.2.0",
     "browserify": "^11.0.1",
     "browserify-shim": "^3.8.10",
-    "topojson": "^1.6.19",
-    "lodash": "^3.10.1"
+    "d3": "^3.5.6",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.0.4",
+    "jquery": "^1.11.2",
+    "lodash": "^3.10.1",
+    "topojson": "^1.6.19"
   },
   "browserify-shim": {
     "datamap": "global:Datamap"
