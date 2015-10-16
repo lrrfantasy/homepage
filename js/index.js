@@ -129,4 +129,12 @@ new Trip('japan-2', [135, 40], 700).init().places([
   }
 ])
 
+new Trip('usa', [-100, 35], 200).init().places([
+  {
+    name: 'New York',
+    latitude: 40.7127,
+    longitude: -74.0059
+  }
+])
+
 $('#overview svg').css('position', 'fixed')
