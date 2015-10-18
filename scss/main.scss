@@ -51,7 +51,6 @@ body {
 
 .travel__cover {
   position: relative;
-  background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .2));
   width: 100%;
   height: 600px;
   padding: 150px 0 0 200px;
@@ -70,7 +69,7 @@ body {
 
   svg.datamap {
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.75);
   }
 
   @include less-than(700px) {
@@ -89,10 +88,11 @@ body {
   top: 0;
   width: 100%;
   height: 600px;
+  background-color: #536;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-filter: contrast(2);
+  background-blend-mode: lighten;
 }
 
 .travel__title-group {
