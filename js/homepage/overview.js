@@ -1,6 +1,6 @@
 import d3 from 'd3'
 import _ from 'lodash'
-import Datamap from './vendor/datamap'
+import Datamap from '../vendor/datamap'
 import CONST from './const'
 
 const visited = ['IDN', 'GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DEN', 'USA']
