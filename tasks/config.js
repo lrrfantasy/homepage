@@ -1,7 +1,11 @@
 module.exports = {
   js: {
     path: 'js/',
-    extension: '.js'
+    extension: '.js{,x}'
+  },
+  spec: {
+    path: 'spec/',
+    extension: '.spec.js'
   },
   sass: {
     path: 'scss/',
@@ -20,9 +24,5 @@ module.exports = {
   build: {
     path: 'build/'
   },
-  data: {
-    path: './data.json'
-  },
   port: 8000
 };
-
