@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 import Trip from './trip'
 import Overview from './overview'
 
@@ -136,5 +134,3 @@ new Trip('usa', [-100, 35], 200).init().places([
     longitude: -74.0059
   }
 ])
-
-$('#overview svg').css('position', 'fixed')
