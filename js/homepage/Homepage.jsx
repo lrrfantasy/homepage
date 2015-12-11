@@ -2,6 +2,7 @@ import React from 'react'
 
 import Hero from './Hero.jsx'
 import Place from './Place.jsx'
+import Navigation from '../components/Navigation.jsx'
 
 import data from './data'
 
@@ -16,7 +17,8 @@ export default class Homepage extends React.Component {
       return <Place place={place} key={idx} />
     })
     return (
-      <div>
+      <div className='main'>
+        <Navigation />
         <Hero visited={visited}/>
         {placeItems}
       </div>
