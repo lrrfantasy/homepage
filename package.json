@@ -13,6 +13,7 @@
     "lodash": "^3.10.1",
     "react": "^0.14.2",
     "react-dom": "0.14.2",
+    "reflux": "^0.3.0",
     "topojson": "^1.6.19"
   },
   "devDependencies": {
