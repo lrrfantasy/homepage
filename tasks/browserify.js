@@ -8,21 +8,24 @@ import config from './config'
 let vendor = Object.keys(require(path.join(process.cwd(), 'package.json')).dependencies)
 function browserifyTask(){
   browserify(config.js.path + 'index.js', {
-              extensions: ['js', 'jsx'],
-              debug: true
-            })
-           .external(vendor)
-           .bundle()
-           .pipe(source('index.js'))
-           .pipe(gulp.dest(config.build.path + config.js.path))
+      extensions: ['js', 'jsx'],
+      debug: true
+    })
+    .external(vendor)
+    .bundle()
+    .on('error', err => {
+      console.log(err.message)
+    })
+    .pipe(source('index.js'))
+    .pipe(gulp.dest(config.build.path + config.js.path))
 }
 
 function vendorTask(){
   browserify()
-          .require(vendor)
-          .bundle()
-          .pipe(source('vendor.js'))
-          .pipe(gulp.dest(config.build.path + config.js.path))
+    .require(vendor)
+    .bundle()
+    .pipe(source('vendor.js'))
+    .pipe(gulp.dest(config.build.path + config.js.path))
 }
 
 export default {

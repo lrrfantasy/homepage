@@ -8,8 +8,11 @@ export default () => {
 
   function run(){
     gulp.src(path)
-             .pipe(sass())
-             .pipe(gulp.dest(config.build.path + config.css.path))
+      .pipe(sass())
+      .on('error', err => {
+        console.log(err.message)
+      })
+      .pipe(gulp.dest(config.build.path + config.css.path))
   }
 
   watcher.register('Scss', path, run)
