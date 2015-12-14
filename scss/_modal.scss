@@ -42,8 +42,7 @@
   width: 90%;
   height: 70%;
   @include bg-image();
-  background-color: #536;
-  background-blend-mode: lighten;
+  @include vintage();
   transition: 1s background-image linear;
 }
 

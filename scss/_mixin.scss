@@ -9,3 +9,8 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@mixin vintage() {
+  background-color: #326;
+  background-blend-mode: lighten;
+}
