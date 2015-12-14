@@ -13,7 +13,7 @@ import data from './data'
 export default class Homepage extends React.Component {
   constructor(props) {
     super(props)
-    HomepageStore.listen(homepageState => {
+    this.unsubscribe = HomepageStore.listen(homepageState => {
       this.setState({
         homepage: homepageState
       })
@@ -22,6 +22,10 @@ export default class Homepage extends React.Component {
 
   state = {
     homepage: {}
+  }
+
+  componentWillUnmount() {
+    this.unsubscribe()
   }
 
   render() {
