@@ -179,7 +179,8 @@ export default {
           latitude: 35.0117,
           longitude: 135.7683
         }
-      ]
+      ],
+      photos: 11
     },
     {
       id: 'usa',

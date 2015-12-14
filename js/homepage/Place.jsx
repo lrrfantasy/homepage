@@ -21,7 +21,7 @@ export default class Place extends React.Component {
   render() {
     let { place } = this.props
     let bgStyle = {
-      backgroundImage: `url(/asset/images/${place.id}.jpg)`
+      backgroundImage: `url(/asset/images/${place.id}/index.jpg)`
     }
     return (
       <div className='travel' onClick={this.showPlaceDetail}>

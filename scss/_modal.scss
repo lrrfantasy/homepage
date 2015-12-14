@@ -31,19 +31,31 @@
   cursor: pointer;
 }
 
-.modal__banner {
-  margin: 30px auto 0;
-  width: 90%;
-  height: 75%;
-  background-color: #536;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
-}
-
 .modal__title {
   padding: 10px 0;
   font-size: 40px;
   text-align: center;
+}
+
+.modal__banner {
+  margin: 30px auto 0;
+  width: 90%;
+  height: 70%;
+  @include bg-image();
+  background-color: #536;
+  background-blend-mode: lighten;
+  transition: 1s background-image linear;
+}
+
+.modal__gallery {
+  margin: 30px auto 0;
+  width: 90%;
+}
+
+.modal__gallery-item {
+  @include bg-image();
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
