@@ -17,7 +17,7 @@ export default class Modal extends React.Component {
   render() {
     let isActive = this.props.active ? 'active' : ''
     let bannerStyle =this.props.place.id ? {
-      backgroundImage: `url(/asset/${this.props.place.id}.jpg)`
+      backgroundImage: `url(/asset/images/${this.props.place.id}.jpg)`
     } : {}
     return (
       <div className={`modal ${isActive}`}>
