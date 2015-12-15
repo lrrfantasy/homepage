@@ -164,7 +164,8 @@ export default {
           latitude: 55.6761,
           longitude: 12.5683
         }
-      ]
+      ],
+      photos: 9
     },
     {
       id: 'japan-2',
