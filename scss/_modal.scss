@@ -31,16 +31,10 @@
   cursor: pointer;
 }
 
-.modal__title {
-  padding: 10px 0;
-  font-size: 40px;
-  text-align: center;
-}
-
 .modal__banner {
   margin: 30px auto 0;
   width: 90%;
-  height: 70%;
+  height: 80%;
   @include bg-image();
   @include vintage();
   transition: 1s background-image linear;
