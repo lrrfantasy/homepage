@@ -180,7 +180,7 @@ export default {
           longitude: 135.7683
         }
       ],
-      photos: 11
+      photos: 12
     },
     {
       id: 'usa',

@@ -17,12 +17,14 @@ export default class Modal extends React.Component {
   }
 
   state = {
-    banner: 'index'
+    banner: 'index',
+    activeIndex: 0
   }
 
   setBanner = idx => {
     this.setState({
-      banner: this.photoIndex[idx]
+      banner: this.photoIndex[idx],
+      activeIndex: idx
     })
   }
 
@@ -40,14 +42,15 @@ export default class Modal extends React.Component {
     } : {}
 
     this.photoIndex = _.range(this.props.place.photos).map(i => {
-      let out = '' + (i + 1)
+      let out = '' + i
       return out.length === 1 ? '0' + out : out
     })
     let gallery = this.photoIndex.map((i, idx) => {
       let style = {
         backgroundImage: `url(/asset/images/${this.props.place.id}/${i}.jpg)`
       }
-      return <li className='modal__gallery-item' style={style} key={idx} onClick={() => {this.setBanner(idx)}}></li>
+      let className=`modal__gallery-item${this.state.activeIndex === idx ? ' active' : ''}`
+      return <li className={className} style={style} key={idx} onClick={() => {this.setBanner(idx)}}></li>
     })
 
     return (
