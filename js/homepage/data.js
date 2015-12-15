@@ -124,7 +124,8 @@ export default {
           latitude: -27.4667,
           longitude: 153.0333
         }
-      ]
+      ],
+      photos: 8
     },
     {
       id: 'denmark',
