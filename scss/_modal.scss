@@ -5,9 +5,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  color: white;
   z-index: 5;
   visibility: hidden;
+  color: white;
   opacity: 0;
   transition-duration: 1s;
   transition-property: opacity, visibility;
@@ -19,11 +19,12 @@
 }
 
 .modal__close {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 60px;
   height: 60px;
+  z-index: 6;
   background: transparent;
   font-size: 80px;
   line-height: 60px;
