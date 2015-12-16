@@ -30,7 +30,8 @@ export default class Modal extends React.Component {
 
   dismissPlaceDetail = () => {
     this.setState({
-      banner: 'index'
+      banner: 'index',
+      activeIndex: 0
     })
     HomepageActions.dismissPlaceDetail()
   }

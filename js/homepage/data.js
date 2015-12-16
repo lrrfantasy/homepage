@@ -74,7 +74,8 @@ export default {
           latitude: 12.9667,
           longitude: 77.5667
         }
-      ]
+      ],
+      photos: 5
     },
     {
       id: 'japan',
@@ -99,7 +100,8 @@ export default {
           latitude: 34.6939,
           longitude: 135.5022
         }
-      ]
+      ],
+      photos: 9
     },
     {
       id: 'australia',
@@ -197,7 +199,8 @@ export default {
           latitude: 40.7127,
           longitude: -74.0059
         }
-      ]
+      ],
+      photos: 10
     }
   ]
 }
