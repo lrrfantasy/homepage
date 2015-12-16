@@ -14,7 +14,8 @@ export default {
           latitude: -8.65,
           longitude: 115.2167
         }
-      ]
+      ],
+      photos: 1
     },
     {
       id: 'uk',
@@ -44,7 +45,8 @@ export default {
           latitude: 53.4,
           longitude: -3
         }
-      ]
+      ],
+      photos: 16
     },
     {
       id: 'thailand',
@@ -59,7 +61,8 @@ export default {
           latitude: 7.89,
           longitude: 98.3983
         }
-      ]
+      ],
+      photos: 3
     },
     {
       id: 'india',
