@@ -57,8 +57,8 @@ export default class Modal extends React.Component {
     return (
       <div className={`modal ${isActive}`}>
         <span className='modal__close' onClick={this.dismissPlaceDetail}>&times;</span>
-        <div className='modal__banner' style={bannerStyle}></div>
         <ul className='modal__gallery'>{gallery}</ul>
+        <div className='modal__banner' style={bannerStyle}></div>
       </div>
     )
   }

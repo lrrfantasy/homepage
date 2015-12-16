@@ -24,7 +24,7 @@
   right: 0;
   width: 60px;
   height: 60px;
-  background: black;
+  background: transparent;
   font-size: 80px;
   line-height: 60px;
   text-align: center;
@@ -43,12 +43,16 @@
 .modal__gallery {
   margin: 30px auto 0;
   width: 90%;
+  height: 80px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .modal__gallery-item {
   @include bg-image();
   display: inline-block;
-  width: 80px;
+  width: 120px;
   height: 80px;
   cursor: pointer;
   &:not(.active) {
