@@ -48,7 +48,7 @@ export default class Modal extends React.Component {
     })
     let gallery = this.photoIndex.map((i, idx) => {
       let style = {
-        backgroundImage: `url(/asset/images/${this.props.place.id}/${i}.jpg)`
+        backgroundImage: `url(/asset/images/${this.props.place.id}/thumb-${i}.jpg)`
       }
       let className=`modal__gallery-item${this.state.activeIndex === idx ? ' active' : ''}`
       return <li className={className} style={style} key={idx} onClick={() => {this.setBanner(idx)}}></li>
