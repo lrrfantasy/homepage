@@ -33,12 +33,22 @@
 }
 
 .modal__banner {
+  position: relative;
   margin: 30px auto 0;
   width: 90%;
   height: 80%;
   @include bg-image();
   @include vintage();
   transition: 1s background-image linear;
+  &.loading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    animation: loading 1s infinite;
+  }
 }
 
 .modal__gallery {

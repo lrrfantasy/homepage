@@ -23,9 +23,19 @@ export default class Modal extends React.Component {
 
   setBanner = idx => {
     this.setState({
-      banner: this.photoIndex[idx],
-      activeIndex: idx
+      banner: 'thumb-' + this.photoIndex[idx],
+      activeIndex: idx,
+      loading: true
     })
+
+    let img = new window.Image()
+    img.src = `/asset/images/${this.props.place.id}/${this.photoIndex[idx]}.jpg`
+    img.onload = () => {
+      this.setState({
+        banner: this.photoIndex[idx],
+        loading: false
+      })
+    }
   }
 
   dismissPlaceDetail = () => {
@@ -57,7 +67,7 @@ export default class Modal extends React.Component {
     return (
       <div className={`modal ${isActive}`}>
         <span className='modal__close' onClick={this.dismissPlaceDetail}>&times;</span>
-        <div className='modal__banner' style={bannerStyle}></div>
+        <div className={`modal__banner${this.state.loading ? ' loading': ''}`} style={bannerStyle}></div>
         <ul className='modal__gallery'>{gallery}</ul>
       </div>
     )

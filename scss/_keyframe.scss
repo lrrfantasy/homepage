@@ -10,14 +10,44 @@
   }
 }
 
-@-webkit-keyframes cd-play {
+$grey: rgba(128, 128, 128, 0.8);
+$white: rgba(255, 255, 255, 0.8);
+
+@keyframes loading {
   0% {
-    transform: rotate(0);
+    background: linear-gradient(to right, $grey 0%, $white 100%);
+  }
+  5% {
+    background: linear-gradient(to right, $white 0%, $grey 10%, $white 100%);
+  }
+  10% {
+    background: linear-gradient(to right, $white 0%, $grey 20%, $white 100%);
+  }
+  15% {
+    background: linear-gradient(to right, $white 0%, $grey 30%, $white 100%);
+  }
+  20% {
+    background: linear-gradient(to right, $white 0%, $grey 40%, $white 100%);
+  }
+  25% {
+    background: linear-gradient(to right, $white 0%, $grey 50%, $white 100%);
+  }
+  30% {
+    background: linear-gradient(to right, $white 0%, $grey 60%, $white 100%);
+  }
+  35% {
+    background: linear-gradient(to right, $white 0%, $grey 70%, $white 100%);
+  }
+  40% {
+    background: linear-gradient(to right, $white 0%, $grey 80%, $white 100%);
+  }
+  45% {
+    background: linear-gradient(to right, $white 0%, $grey 90%, $white 100%);
   }
   50% {
-    transform: rotate(180deg);
+    background: linear-gradient(to right, $white 0%, $grey 100%);
   }
   100% {
-    transform: rotate(360deg);
+    background: linear-gradient(to right, $white 0%, $grey 100%);
   }
 }
