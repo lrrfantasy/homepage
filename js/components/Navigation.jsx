@@ -14,7 +14,7 @@ export default class Navigation extends React.Component {
             <a href='/'>Home</a>
           </li>
           <li className='nav__item'>
-            <a href='#'>About</a>
+            <a href='/about.html'>About</a>
           </li>
         </ul>
       </nav>
