@@ -1,0 +1,60 @@
+.read {
+  padding: 50px;
+}
+
+.read__book-list {
+  margin: 50px auto;
+  width: 90%;
+}
+
+.book {
+  position: relative;
+  padding: 15px 0;
+  display: flex;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 3px;
+    border-radius: 3px;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    width: 65px;
+  }
+  @for $i from 1 through 5 {
+    &.rating-#{$i} {
+      &:before {
+        right: calc(100% * (5 - #{$i}) / 5)
+      }
+      &:after {
+        content: 'Rating: #{$i}';
+        left: calc(100% * #{$i} / 5 + 10px);
+      }
+    }
+  }
+  &.read:before {
+    background: #0094c8;
+  }
+  &.reading {
+    &:before {
+      right: 0;
+      background: #9d896c;
+    }
+    &:after {
+      content: 'Reading';
+      left: calc(100% + 10px);
+    }
+  }
+}
+
+.book__info {
+  padding-left: 20px;
+}
+
+.book__title,
+.book__author {
+  margin: 10px 0;
+}
