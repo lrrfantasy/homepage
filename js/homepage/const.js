@@ -1,4 +1,5 @@
 export default {
   PALE_BLUE: '#79b6d2',
-  INDIAN_RED: '#cd5c5c'
+  INDIAN_RED: '#cd5c5c',
+  VIOLET: '#7058a3'
 }

@@ -13,7 +13,8 @@ const config = {
   },
   fills: {
     defaultFill: 'transparent',
-    visited: CONST.INDIAN_RED
+    visited: CONST.INDIAN_RED,
+    home: CONST.VIOLET
   },
   responsive: true
 }
@@ -28,6 +29,7 @@ export default class Hero extends React.Component {
       mem[cur] = { fillKey: 'visited' }
       return mem
     }, {})
+    config.data['CHN'] = { fillKey: 'home' }
     config.element = ReactDom.findDOMNode(this)
     new Datamap(config)
   }
