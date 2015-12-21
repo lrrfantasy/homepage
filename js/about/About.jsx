@@ -11,7 +11,7 @@ export default class About extends React.Component {
   render() {
     return (
       <div className='main'>
-        <Navigation />
+        <Navigation active='about'/>
         <div className='about'>
           <h2 className='about__title'>About Me</h2>
           <p className='about__intro'>

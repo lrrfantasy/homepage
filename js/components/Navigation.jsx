@@ -6,19 +6,35 @@ export default class Navigation extends React.Component {
   }
 
   render() {
+    let navs = [
+      {
+        url: '/',
+        title: 'Home',
+        ref: 'home'
+      },
+      {
+        url: '/read.html',
+        title: 'Reading',
+        ref: 'read'
+      },
+      {
+        url: '/about.html',
+        title: 'About',
+        ref: 'about'
+      }
+    ]
+    let navList = navs.map((nav, idx) => {
+      return (
+        <li className={`nav__item${this.props.active === nav.ref ? ' active' : ''}`}>
+          <a href={nav.url}>{nav.title}</a>
+        </li>
+      )
+    })
     return (
       <nav className='nav'>
         <h1 className='nav__logo'>Satori</h1>
         <ul className='nav__items'>
-          <li className='nav__item'>
-            <a href='/'>Home</a>
-          </li>
-          <li className='nav__item'>
-            <a href='/read.html'>Reading</a>
-          </li>
-          <li className='nav__item'>
-            <a href='/about.html'>About</a>
-          </li>
+          {navList}
         </ul>
       </nav>
     )

@@ -36,7 +36,7 @@ export default class Homepage extends React.Component {
     })
     return (
       <div className='main'>
-        <Navigation />
+        <Navigation active='home'/>
         <Hero visited={visited} />
         {placeItems}
         <Modal active={homepage.isModalActive} place={homepage.place}/>

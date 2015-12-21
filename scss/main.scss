@@ -81,4 +81,8 @@ a {
       content: none;
     }
   }
+  &.active a {
+    background: white;
+    color: black;
+  }
 }
