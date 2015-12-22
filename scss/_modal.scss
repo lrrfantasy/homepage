@@ -32,11 +32,22 @@
   cursor: pointer;
 }
 
+.modal__airport {
+  margin: 30px auto 0;
+  width: 90%;
+  ul, li {
+    display: inline-block;
+  }
+  li {
+    padding: 0 10px;
+  }
+}
+
 .modal__banner {
   position: relative;
   margin: 30px auto 0;
   width: 90%;
-  height: 80%;
+  height: 70%;
   @include bg-image();
   @include vintage();
   transition: 1s background-image linear;

@@ -1,6 +1,8 @@
 import React from 'react'
 import _ from 'lodash'
 
+import Icon from '../components/Icon.jsx'
+
 import HomepageActions from './HomepageActions'
 
 export default class Modal extends React.Component {
@@ -12,7 +14,8 @@ export default class Modal extends React.Component {
     active: false,
     place: {
       id: null,
-      name: ''
+      name: '',
+      airports: []
     }
   }
 
@@ -47,6 +50,10 @@ export default class Modal extends React.Component {
   }
 
   render() {
+    let airports = this.props.place.airports.map((airport, idx) => {
+      return <li key={idx}>{airport}</li>
+    })
+
     let isActive = this.props.active ? 'active' : ''
     let bannerStyle = this.props.place.id ? {
       backgroundImage: `url(/asset/images/${this.props.place.id}/${this.state.banner}.jpg)`
@@ -67,6 +74,10 @@ export default class Modal extends React.Component {
     return (
       <div className={`modal ${isActive}`}>
         <span className='modal__close' onClick={this.dismissPlaceDetail}>&times;</span>
+        <div className='modal__airport'>
+          <Icon icon='plane' />
+          <ul>{airports}</ul>
+        </div>
         <div className={`modal__banner${this.state.loading ? ' loading': ''}`} style={bannerStyle}></div>
         <ul className='modal__gallery'>{gallery}</ul>
       </div>

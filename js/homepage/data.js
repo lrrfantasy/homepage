@@ -15,6 +15,9 @@ export default {
           longitude: 115.2167
         }
       ],
+      airports: [
+        'Bali Ngurah Rai Airport'
+      ],
       photos: 1
     },
     {
@@ -46,6 +49,10 @@ export default {
           longitude: -3
         }
       ],
+      airports: [
+        'Manchester Airport',
+        'London Heathrow Airport'
+      ],
       photos: 16
     },
     {
@@ -62,6 +69,9 @@ export default {
           longitude: 98.3983
         }
       ],
+      airports: [
+        'Phuket Airport'
+      ],
       photos: 3
     },
     {
@@ -77,6 +87,9 @@ export default {
           latitude: 12.9667,
           longitude: 77.5667
         }
+      ],
+      airports: [
+        'Bangalore Airport'
       ],
       photos: 5
     },
@@ -104,6 +117,10 @@ export default {
           longitude: 135.5022
         }
       ],
+      airports: [
+        'Tokyo Narita Airport',
+        'Nagoya Chubu Airport'
+      ],
       photos: 9
     },
     {
@@ -129,6 +146,11 @@ export default {
           latitude: -27.4667,
           longitude: 153.0333
         }
+      ],
+      airports: [
+        'Sydney Kingsford Smith Airport',
+        'Melbourne Tullamarine Airport',
+        'Brisbane Airport'
       ],
       photos: 8
     },
@@ -171,6 +193,10 @@ export default {
           longitude: 12.5683
         }
       ],
+      airports: [
+        'Moscow Sheremetyevo Airport',
+        'Stockholm Arlanda Airport'
+      ],
       photos: 9
     },
     {
@@ -187,6 +213,9 @@ export default {
           longitude: 135.7683
         }
       ],
+      airports: [
+        'Osaka Kansai Airport'
+      ],
       photos: 12
     },
     {
@@ -202,6 +231,9 @@ export default {
           latitude: 40.7127,
           longitude: -74.0059
         }
+      ],
+      airports: [
+        'Newark Liberty Airport'
       ],
       photos: 10
     }

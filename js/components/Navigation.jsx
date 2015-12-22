@@ -25,7 +25,7 @@ export default class Navigation extends React.Component {
     ]
     let navList = navs.map((nav, idx) => {
       return (
-        <li className={`nav__item${this.props.active === nav.ref ? ' active' : ''}`}>
+        <li className={`nav__item${this.props.active === nav.ref ? ' active' : ''}`} key={idx}>
           <a href={nav.url}>{nav.title}</a>
         </li>
       )
