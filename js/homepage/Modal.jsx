@@ -20,7 +20,7 @@ export default class Modal extends React.Component {
   }
 
   state = {
-    banner: 'index',
+    banner: '00',
     activeIndex: 0
   }
 
@@ -43,7 +43,7 @@ export default class Modal extends React.Component {
 
   dismissPlaceDetail = () => {
     this.setState({
-      banner: 'index',
+      banner: '00',
       activeIndex: 0
     })
     HomepageActions.dismissPlaceDetail()

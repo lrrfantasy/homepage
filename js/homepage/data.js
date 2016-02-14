@@ -236,6 +236,25 @@ export default {
         'Newark Liberty Airport'
       ],
       photos: 10
+    },
+    {
+      id: 'mauritius',
+      name: 'Mauritius',
+      origin: [57, -20],
+      scale: 200,
+      photoPlace: 'Caudan Waterfront, Port Louis',
+      photoTime: 'February 2016',
+      places: [
+        {
+          name: 'Port Louis',
+          latitude: -20.1644,
+          longitude: 57.5041
+        }
+      ],
+      airports: [
+        'Sir Seewoosagur Ramgoolam Airport'
+      ],
+      photos: 10
     }
   ]
 }
