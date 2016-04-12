@@ -1,0 +1,78 @@
+@import '../../styles/mixins';
+@import '../../styles/keyframe';
+
+.modal {
+  background: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  visibility: hidden;
+  color: white;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, visibility;
+  transition-timing-function: linear;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 6;
+  background: transparent;
+  font-size: 80px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  margin: 30px auto 0;
+  width: 90%;
+  height: calc(100vh - 160px);
+  @include bg-image();
+  @include vintage();
+  transition: 1s background-image linear;
+  &.loading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    animation: loading 1s infinite;
+  }
+}
+
+.gallery {
+  margin: 30px auto 0;
+  width: 90%;
+  height: 80px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.galleryItem {
+  @include bg-image();
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+  cursor: pointer;
+
+  &:not(.galleryActive) {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  }
+}

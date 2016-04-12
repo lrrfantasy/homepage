@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Open sans', Arial, sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  position: relative;
+  color: #89c3eb;
+  text-decoration: none;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    border-bottom: 1px solid;
+    transition: 0.4s;
+  }
+  &:hover:after {
+    left: 0%;
+    width: 100%;
+  }
+}

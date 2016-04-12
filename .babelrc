@@ -1,6 +1,4 @@
 {
-  "stage": 2,
-  "optional": [
-    "es7.classProperties"
-  ]
+  "presets": ["es2015", "stage-0", "react"],
+  "plugins": ["transform-runtime", "transform-decorators-legacy"]
 }

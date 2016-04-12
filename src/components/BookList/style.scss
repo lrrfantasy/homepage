@@ -1,0 +1,58 @@
+.list {
+  margin: 100px auto;
+  width: 80%;
+}
+
+.book {
+  position: relative;
+  padding: 15px 0;
+  display: flex;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 3px;
+    border-radius: 3px;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    width: 65px;
+  }
+
+  @for $i from 1 through 5 {
+    &.rating-#{$i} {
+      &:before {
+        right: calc(100% * (5 - #{$i}) / 5)
+      }
+      &:after {
+        content: 'Rating: #{$i}';
+        left: calc(100% * #{$i} / 5 + 10px);
+      }
+    }
+  }
+
+  &.read:before {
+    background: #51a8dd;
+  }
+  &.reading {
+    &:before {
+      right: 0;
+      background: #f596aa;
+    }
+    &:after {
+      content: 'Reading';
+      left: calc(100% + 10px);
+    }
+  }
+}
+
+.info {
+  padding-left: 20px;
+}
+
+.title,
+.author {
+  margin: 10px 0;
+}
