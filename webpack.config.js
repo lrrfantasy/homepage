@@ -6,7 +6,14 @@ var config = {
   entry: {
     jsx: './index.jsx',
     html: './index.html',
-    vendor: ['react']
+    vendor: [
+      'react',
+      'react-dom',
+      'react-redux',
+      'react-router',
+      'react-router-redux',
+      'redux'
+    ]
   },
   output: {
     path: path.join(__dirname, './static'),
