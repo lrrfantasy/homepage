@@ -1,5 +1,5 @@
 export default {
-  visited: ['IDN', 'GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DEN', 'USA'],
+  visited: ['IDN', 'GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DNK', 'USA', 'KOR'],
   places: [
     {
       id: 'indonesia',
@@ -220,6 +220,22 @@ export default {
         }
       ],
       photos: 6
+    },
+    {
+      id: 'south-korea',
+      name: 'South Korea',
+      zoomCenter: [126, 36],
+      scale: 700,
+      photoPlace: 'Myeong-dong, Seoul',
+      photoTime: 'May, 2016',
+      places: [
+        {
+          name: 'Seoul',
+          latitude: 37.5665,
+          longitude: 126.9780
+        }
+      ],
+      photos: 8
     }
   ]
 }
