@@ -38,9 +38,9 @@
 
 .banner {
   position: relative;
-  margin: 30px auto 0;
-  width: 90%;
-  height: calc(100vh - 160px);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   @include bg-image();
   @include vintage();
   transition: 1s background-image linear;
@@ -56,12 +56,14 @@
 }
 
 .gallery {
-  margin: 30px auto 0;
-  width: 90%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 80px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .galleryItem {
