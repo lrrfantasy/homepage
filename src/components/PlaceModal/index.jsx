@@ -3,13 +3,19 @@ import { connect } from 'react-redux'
 import classnames from 'classnames'
 import R from 'ramda'
 
+import Icon from '../../components/Icon'
+
 import * as homeActions from '../../actions/home'
 
 import style from './style.scss'
 
-
 function mapStateToProps (state) {
   return { }
+}
+
+function getIndex (idx) {
+  const out = '' + idx
+  return out.length === 1 ? '0' + out : out
 }
 
 @connect(mapStateToProps, homeActions)
@@ -26,6 +32,16 @@ export default class PlaceModal extends Component {
       activeIndex: '00'
     })
     this.props.closePlaceModal()
+  }
+
+  nextBanner () {
+    const index = +this.state.activeIndex + 1
+    this.setBanner(getIndex(index))
+  }
+
+  prevBanner () {
+    const index = +this.state.activeIndex - 1
+    this.setBanner(getIndex(index))
   }
 
   setBanner (i) {
@@ -58,12 +74,17 @@ export default class PlaceModal extends Component {
         backgroundImage: `url(/assets/${place.id}/${this.state.banner}.jpg)`
       }
       : {}
+    const controll = classname => classnames(style.controll, classname)
+
+    const leftClass = classnames(controll(style.left), {
+      [`${style.invalid}`]: this.state.activeIndex === '00'
+    })
+    const rightClass = classnames(controll(style.right), {
+      [`${style.invalid}`]: this.state.activeIndex === getIndex(place.photos - 1)
+    })
 
     const gallery = place.photos
-      ? R.range(0, place.photos).map(i => {
-        const out = '' + i
-        return out.length === 1 ? '0' + out : out
-      }).map((i, idx) => {
+      ? R.range(0, place.photos).map(getIndex).map((i, idx) => {
         const bgStyle = {
           backgroundImage: `url(/assets/${place.id}/thumb-${i}.jpg)`
         }
@@ -76,8 +97,14 @@ export default class PlaceModal extends Component {
 
     return (
       <div className={modalClass}>
-        <span className={style.close} onClick={::this.closePlaceModal}>
+        <span className={controll(style.close)} onClick={::this.closePlaceModal}>
           &times;
+        </span>
+        <span className={leftClass} onClick={::this.prevBanner}>
+          <Icon icon='angle-left' />
+        </span>
+        <span className={rightClass} onClick={::this.nextBanner}>
+          <Icon icon='angle-right' />
         </span>
         <div className={bannerClass} style={bannerStyle}></div>
         <ul className={style.gallery}>{gallery}</ul>
