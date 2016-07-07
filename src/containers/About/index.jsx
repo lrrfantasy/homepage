@@ -15,7 +15,8 @@ export default class About extends Component {
         <div className={style.about}>
           <h2 className={style.title}>About Me</h2>
           <p className={style.intro}>
-            Hello, I'm Ruoran Liu. I am a front-end developer based in Chengdu, China. I'm now working for ThoughtWorks.
+            Hello, I'm Ruoran Liu. I am a front-end developer based in Chengdu, China.
+            I'm now working for ThoughtWorks.
           </p>
           <p className={style.intro}>
             My friends and I also have an unofficial studio <a href='//the-blackhole.github.io/'>Black Hole</a> for doing interesting stuff.

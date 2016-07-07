@@ -8,8 +8,6 @@ import Hero from '../../components/Hero'
 import Place from '../../components/Place'
 import PlaceModal from '../../components/PlaceModal'
 
-import style from './style.scss'
-
 function mapStateToProps (state) {
   return {
     home: state.home

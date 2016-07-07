@@ -9,6 +9,7 @@ import Homepage from './containers/Homepage'
 import Read from './containers/Read'
 import About from './containers/About'
 import JapaneseColor from './containers/JapaneseColor'
+import Calendar from './containers/Calendar'
 import NotFound from './containers/NotFound'
 
 import configure from './store'
@@ -26,8 +27,9 @@ ReactDOM.render(
     <Router history={history}>
       <Route path='/' component={Homepage} />
       <Route path='/read' component={Read} />
-      <Route path='/about' component={About} />
+      <Route path='/calendar' component={Calendar} />
       <Route path='/japanese-color' component={JapaneseColor} />
+      <Route path='/about' component={About} />
       <Route path='*' component={NotFound} />
     </Router>
   </Provider>,

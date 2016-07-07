@@ -18,6 +18,11 @@ export default class Navigation extends Component {
         ref: 'read'
       },
       {
+        url: '/calendar',
+        title: 'Calendar',
+        ref: 'calendar'
+      },
+      {
         url: '/japanese-color',
         title: '和風色',
         ref: 'japanese-color'
