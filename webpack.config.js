@@ -28,18 +28,18 @@ var config = {
         loader: 'file?name=[name].[ext]'
       },
       {
-        test: /\.(css|scss)$/,
+        test: /\.(css|styl)$/,
         include: /src/,
         loaders: [
           'style-loader',
           'css-loader?&modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
-          'sass-loader'
+          'stylus-loader'
         ]
       },
       {
-        test: /\.(css|scss)$/,
+        test: /\.css$/,
         exclude: /src/,
-        loader: 'style!css!sass-loader'
+        loader: 'style!css'
       },
       {
         test: /\.(js|jsx)$/,

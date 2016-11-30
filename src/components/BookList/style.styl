@@ -21,14 +21,14 @@
     width: 65px;
   }
 
-  @for $i from 1 through 5 {
-    &.rating-#{$i} {
+  for $i in (1..5) {
+    &.rating-{$i} {
       &:before {
-        right: calc(100% * (5 - #{$i}) / 5)
+        right: 'calc(100% * (5 - %s) / 5)' % $i
       }
       &:after {
-        content: 'Rating: #{$i}';
-        left: calc(100% * #{$i} / 5 + 10px);
+        content: 'Rating: ' + $i;
+        left: 'calc(100% * %s / 5 + 10px)' % $i;
       }
     }
   }

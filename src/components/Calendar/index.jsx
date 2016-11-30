@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import R from 'ramda'
 import moment from 'moment'
 
-import style from './style.scss'
+import style from './style.styl'
 
 class Month extends Component {
   render () {

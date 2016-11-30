@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import classnames from 'classnames'
 
-import style from './style.scss'
+import style from './style.styl'
 
 export default class BookList extends Component {
   render() {

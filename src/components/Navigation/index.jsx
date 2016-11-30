@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import classnames from 'classnames'
 
-import style from './style.scss'
+import style from './style.styl'
 
 export default class Navigation extends Component {
   render () {

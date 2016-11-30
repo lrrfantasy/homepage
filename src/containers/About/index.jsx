@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Navigation from '../../components/Navigation'
 import Icon from '../../components/Icon'
 
-import style from './style.scss'
+import style from './style.styl'
 
 export default class About extends Component {
 

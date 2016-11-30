@@ -14,8 +14,8 @@ import NotFound from './containers/NotFound'
 
 import configure from './store'
 
-import './styles/main.scss'
-import 'font-awesome/scss/font-awesome.scss'
+import './styles/main.styl'
+import 'font-awesome/css/font-awesome.css'
 
 const store = configure(undefined, process.env)
 

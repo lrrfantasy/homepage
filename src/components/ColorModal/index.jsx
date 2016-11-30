@@ -3,7 +3,7 @@ import classnames from 'classnames'
 
 import { contrastColor } from '../../utils/utils'
 
-import style from './style.scss'
+import style from './style.styl'
 
 export default class ColorModal extends Component {
   render () {

@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 import Navigation from '../../components/Navigation'
 
-import style from './style.scss'
+import style from './style.styl'
 
 export default class NotFound extends Component {
   render () {

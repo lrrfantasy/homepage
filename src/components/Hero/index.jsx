@@ -6,7 +6,7 @@ import MapWrapper from '../MapWrapper'
 
 import CONST from '../../utils/const'
 
-import style from './style.scss'
+import style from './style.styl'
 
 const defaultConfig = {
   projection: 'mercator',

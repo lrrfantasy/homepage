@@ -10,7 +10,7 @@ import ColorModal from '../../components/ColorModal'
 
 import { contrastColor } from '../../utils/utils'
 
-import style from './style.scss'
+import style from './style.styl'
 
 function mapStateToProps (state) {
   return {

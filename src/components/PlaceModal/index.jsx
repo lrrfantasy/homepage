@@ -7,7 +7,7 @@ import Icon from '../../components/Icon'
 
 import * as homeActions from '../../actions/home'
 
-import style from './style.scss'
+import style from './style.styl'
 
 function mapStateToProps (state) {
   return { }
