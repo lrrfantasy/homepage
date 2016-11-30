@@ -1,5 +1,6 @@
 var webpack = require('webpack')
 var path = require('path')
+var DashboardPlugin = require('webpack-dashboard/plugin')
 
 var config = {
   context: path.join(__dirname, './src'),
@@ -65,6 +66,7 @@ var config = {
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
+    new DashboardPlugin(),
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') }
