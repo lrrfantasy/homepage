@@ -67,8 +67,8 @@
   margin: 0 auto;
   width: 100%;
   height: calc(100% - 80px);
-  @include bg-image();
-  @include vintage();
+  bg-image();
+  vintage();
   transition: 1s background-image linear;
   &.loading:after {
     content: '';
@@ -92,7 +92,7 @@
 }
 
 .galleryItem {
-  @include bg-image();
+  bg-image();
   display: inline-block;
   width: 120px;
   height: 80px;
