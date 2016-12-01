@@ -7,7 +7,6 @@ import Icon from '../../components/Icon'
 import style from './style.styl'
 
 export default class About extends Component {
-
   render () {
     return (
       <div>

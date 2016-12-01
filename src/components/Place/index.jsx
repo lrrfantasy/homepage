@@ -49,11 +49,7 @@ function zoom (center, scale) {
   }
 }
 
-function mapStateToProps (state) {
-  return { }
-}
-
-@connect(mapStateToProps, homeActions)
+@connect(() => ({}), homeActions)
 export default class Place extends Component {
   static defaultProps = {
     places: []

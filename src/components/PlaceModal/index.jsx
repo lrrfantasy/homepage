@@ -9,16 +9,12 @@ import * as homeActions from '../../actions/home'
 
 import style from './style.styl'
 
-function mapStateToProps (state) {
-  return { }
-}
-
 function getIndex (idx) {
   const out = '' + idx
   return out.length === 1 ? '0' + out : out
 }
 
-@connect(mapStateToProps, homeActions)
+@connect(() => ({}), homeActions)
 export default class PlaceModal extends Component {
   state = {
     banner: '00',

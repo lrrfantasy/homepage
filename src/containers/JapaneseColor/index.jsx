@@ -12,13 +12,7 @@ import { contrastColor } from '../../utils/utils'
 
 import style from './style.styl'
 
-function mapStateToProps (state) {
-  return {
-    japaneseColor: state.japaneseColor
-  }
-}
-
-@connect(mapStateToProps, japaneseColorActions)
+@connect(({ japaneseColor }) => ({ japaneseColor }), japaneseColorActions)
 export default class extends Component {
   componentDidMount () {
     this.props.fetchColor()

@@ -8,13 +8,7 @@ import Hero from '../../components/Hero'
 import Place from '../../components/Place'
 import PlaceModal from '../../components/PlaceModal'
 
-function mapStateToProps (state) {
-  return {
-    home: state.home
-  }
-}
-
-@connect(mapStateToProps, homeActions)
+@connect(({ home }) => ({ home }), homeActions)
 export default class Homepage extends Component {
   componentDidMount () {
     this.props.fetchVisitedCountry()
@@ -24,7 +18,7 @@ export default class Homepage extends Component {
   render () {
     const { visited, places, modalPlace, isModalActive } = this.props.home
     const placeItems = places.map((place, idx) => (
-      <Place place={place} key={idx}/>
+      <Place place={place} key={idx} />
     ))
     return (
       <div>

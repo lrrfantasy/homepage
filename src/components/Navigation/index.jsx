@@ -4,36 +4,37 @@ import classnames from 'classnames'
 
 import style from './style.styl'
 
+const navs = [
+  {
+    url: '/',
+    title: 'Home',
+    ref: 'home'
+  },
+  {
+    url: '/read',
+    title: 'Reading',
+    ref: 'read'
+  },
+  {
+    url: '/calendar',
+    title: 'Calendar',
+    ref: 'calendar'
+  },
+  {
+    url: '/japanese-color',
+    title: '和風色',
+    ref: 'japanese-color'
+  },
+  {
+    url: '/about',
+    title: 'About',
+    ref: 'about'
+  }
+]
+
 export default class Navigation extends Component {
   render () {
-    let navs = [
-      {
-        url: '/',
-        title: 'Home',
-        ref: 'home'
-      },
-      {
-        url: '/read',
-        title: 'Reading',
-        ref: 'read'
-      },
-      {
-        url: '/calendar',
-        title: 'Calendar',
-        ref: 'calendar'
-      },
-      {
-        url: '/japanese-color',
-        title: '和風色',
-        ref: 'japanese-color'
-      },
-      {
-        url: '/about',
-        title: 'About',
-        ref: 'about'
-      }
-    ]
-    let navList = navs.map((nav, idx) => {
+    const navList = navs.map((nav, idx) => {
       const itemClass = classnames(style.item, {
         [`${style.itemActive}`]: this.props.active === nav.ref
       })
