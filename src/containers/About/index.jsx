@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import Navigation from '../../components/Navigation'
-import Icon from '../../components/Icon'
+import Icon from '../../ui/Icon'
 
 import style from './style.styl'
 

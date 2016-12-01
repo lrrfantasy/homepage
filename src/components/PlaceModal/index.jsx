@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import classnames from 'classnames'
 import R from 'ramda'
 
-import Icon from '../../components/Icon'
+import Icon from '../../ui/Icon'
 
 import * as homeActions from '../../actions/home'
 
