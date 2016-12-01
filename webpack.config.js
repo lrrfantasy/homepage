@@ -66,7 +66,6 @@ var config = {
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
-    new DashboardPlugin(),
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') }
@@ -85,6 +84,8 @@ if (process.env.NODE_ENV === 'production') {
     },
     sourceMap: false
   }))
+} else {
+  config.plugins.push(new DashboardPlugin())
 }
 
 module.exports = config
