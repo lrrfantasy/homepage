@@ -18,7 +18,7 @@ const defaultConfig = {
   fills: {
     defaultFill: 'transparent',
     visited: CONST.INDIAN_RED,
-    home: CONST.VIOLET
+    home: CONST.SAKURA
   },
   responsive: true
 }
