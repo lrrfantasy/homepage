@@ -236,6 +236,27 @@ export default {
         }
       ],
       photos: 8
+    },
+    {
+      id: 'japan-3',
+      name: 'Japan',
+      zoomCenter: [135, 30],
+      scale: 600,
+      photoPlace: 'Kamakura Koukoumae, Kamakura',
+      photoTime: 'December 2016',
+      places: [
+        {
+          name: 'Tokyo',
+          latitude: 35.6833,
+          longitude: 139.6833
+        },
+        {
+          name: 'Naha',
+          latitude: 26.2123,
+          longitude: 127.6792
+        }
+      ],
+      photos: 11
     }
   ]
 }
