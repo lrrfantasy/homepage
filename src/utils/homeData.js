@@ -1,5 +1,5 @@
 export default {
-  visited: ['IDN', 'GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DNK', 'USA', 'KOR'],
+  visited: ['IDN', 'GBR', 'THA', 'IND', 'JPN', 'AUS', 'RUS', 'FIN', 'SWE', 'NOR', 'DNK', 'USA', 'KOR', 'PHL'],
   places: [
     {
       id: 'indonesia',
@@ -257,6 +257,22 @@ export default {
         }
       ],
       photos: 11
+    },
+    {
+      id: 'philippines',
+      name: 'Philippines',
+      zoomCenter: [121, 12],
+      scale: 600,
+      photoPlace: 'Bulabog Beach, Boracay',
+      photoTime: 'December 2016',
+      places: [
+        {
+          name: 'Boracay',
+          latitude: 11.9804,
+          longitude: 121.9189
+        }
+      ],
+      photos: 5
     }
   ]
 }
