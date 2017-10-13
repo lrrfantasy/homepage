@@ -178,7 +178,7 @@ export default {
       name: 'Japan',
       zoomCenter: [135, 40],
       scale: 700,
-      photoPlace: 'Fushimi Inari Daisha, Kyoto',
+      photoPlace: 'Fushimi Inari Taisha, Kyoto',
       photoTime: 'August 2015',
       places: [
         {
