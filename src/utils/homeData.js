@@ -264,7 +264,7 @@ export default {
       zoomCenter: [121, 12],
       scale: 600,
       photoPlace: 'Bulabog Beach, Boracay',
-      photoTime: 'December 2016',
+      photoTime: 'May 2017',
       places: [
         {
           name: 'Boracay',
@@ -273,6 +273,27 @@ export default {
         }
       ],
       photos: 5
+    },
+    {
+      id: 'japan-4',
+      name: 'Japan',
+      zoomCenter: [135, 40],
+      scale: 600,
+      photoPlace: 'Rurikouin, Kyoto',
+      photoTime: 'November 2017',
+      places: [
+        {
+          name: 'Tokyo',
+          latitude: 35.6833,
+          longitude: 139.6833
+        },
+        {
+          name: 'Kyoto',
+          latitude: 35.0117,
+          longitude: 135.7683
+        }
+      ],
+      photos: 8
     }
   ]
 }
