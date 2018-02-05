@@ -11,7 +11,7 @@ export default class Calendar extends Component {
       <div>
         <Navigation active='calendar' />
         <div className={style.calendar}>
-          <h2 className={style.title}>Calendar of 2017</h2>
+          <h2 className={style.title}>Calendar of 2018</h2>
           <Year />
         </div>
       </div>
